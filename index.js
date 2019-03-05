@@ -12,7 +12,6 @@ bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
     bot.user.setStatus("online");
     
-
 })
 
 bot.on("disconnected", () => {
@@ -50,4 +49,6 @@ bot.on("message", (message) => {
 )
 
 bot.login(process.env.BOT_TOKEN);
+    
+
 
