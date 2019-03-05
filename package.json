@@ -4,6 +4,7 @@
   "description": "ICP Status Bot for ICP Members.",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
