@@ -31,13 +31,13 @@ bot.on("message", (message) => {
 
 bot.on("presenceUpdate", (ICPMember) => {
     let ICPMemberStatus = ICPMember.user.presence.status;
-    let textChannel = ICPMember.guild.channels.get('552412596050067466');
+    let textChannel = ICPMember.guild.channels.get('535390383312601118');
     if (!textChannel) throw new Error("That channel does not exist.");
     textChannel.send(`${ICPMember} is now ${ICPMemberStatus}`)
 })
 
 bot.on("message", (message) => {
-    let textChannel = message.guild.channels.get('498904267743166465')
+    let textChannel = message.guild.channels.get('535390383312601118')
     if(message.content == 'leave'){
         if(message.author.id !== '497871783559561216'){
             textChannel.send(`*»** ${message.author}, you don't have permission to do that!`)
@@ -50,3 +50,4 @@ bot.on("message", (message) => {
 )
 
 bot.login(process.env.BOT_TOKEN);
+
